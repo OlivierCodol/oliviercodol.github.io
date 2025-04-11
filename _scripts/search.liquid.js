@@ -64,7 +64,8 @@ ninja.data = [
         {% else %}
           title: "{{ title | truncatewords: 13 }}",
         {% endif %}
-        description: "{{ post.description | strip_html | strip_newlines | escape | strip }}",
+        {% assign year = post.date | slice: 0, 4 %}
+        description: "{{ post.description | strip_html | strip_newlines | escape | strip | append: ' ' | append: year }}",
         section: "Posts",
         handler: () => {
           {% if post.redirect == blank %}
