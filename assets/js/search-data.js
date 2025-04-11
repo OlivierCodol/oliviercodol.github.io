@@ -76,7 +76,8 @@ ninja.data = [{
         
           title: "a post with plotly.js",
         
-        description: "this is what included plotly.js code could look like",
+        
+        description: "this is what included plotly.js code could look like 2025",
         section: "Posts",
         handler: () => {
           
@@ -87,7 +88,8 @@ ninja.data = [{
         
           title: "a post with image galleries",
         
-        description: "this is what included image galleries could look like",
+        
+        description: "this is what included image galleries could look like 2024",
         section: "Posts",
         handler: () => {
           
@@ -98,7 +100,8 @@ ninja.data = [{
         
           title: 'Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
-        description: "We’re sharing updates across our Gemini family of models and a glimpse of Project Astra, our vision for the future of AI assistants.",
+        
+        description: "We’re sharing updates across our Gemini family of models and a glimpse of Project Astra, our vision for the future of AI assistants. 2024",
         section: "Posts",
         handler: () => {
           
@@ -109,7 +112,8 @@ ninja.data = [{
         
           title: "a post with tabs",
         
-        description: "this is what included tabs in a post could look like",
+        
+        description: "this is what included tabs in a post could look like 2024",
         section: "Posts",
         handler: () => {
           
@@ -120,7 +124,8 @@ ninja.data = [{
         
           title: "a post with typograms",
         
-        description: "this is what included typograms code could look like",
+        
+        description: "this is what included typograms code could look like 2024",
         section: "Posts",
         handler: () => {
           
@@ -131,7 +136,8 @@ ninja.data = [{
         
           title: "a post that can be cited",
         
-        description: "this is what a post that can be cited looks like",
+        
+        description: "this is what a post that can be cited looks like 2024",
         section: "Posts",
         handler: () => {
           
@@ -142,7 +148,8 @@ ninja.data = [{
         
           title: "a post with pseudo code",
         
-        description: "this is what included pseudo code could look like",
+        
+        description: "this is what included pseudo code could look like 2024",
         section: "Posts",
         handler: () => {
           
@@ -153,7 +160,8 @@ ninja.data = [{
         
           title: "a post with code diff",
         
-        description: "this is how you can display code diffs",
+        
+        description: "this is how you can display code diffs 2024",
         section: "Posts",
         handler: () => {
           
@@ -164,7 +172,8 @@ ninja.data = [{
         
           title: "a post with advanced image components",
         
-        description: "this is what advanced image components could look like",
+        
+        description: "this is what advanced image components could look like 2024",
         section: "Posts",
         handler: () => {
           
@@ -175,7 +184,8 @@ ninja.data = [{
         
           title: "a post with vega lite",
         
-        description: "this is what included vega lite code could look like",
+        
+        description: "this is what included vega lite code could look like 2024",
         section: "Posts",
         handler: () => {
           
@@ -186,7 +196,8 @@ ninja.data = [{
         
           title: "a post with geojson",
         
-        description: "this is what included geojson code could look like",
+        
+        description: "this is what included geojson code could look like 2024",
         section: "Posts",
         handler: () => {
           
@@ -197,7 +208,8 @@ ninja.data = [{
         
           title: "a post with echarts",
         
-        description: "this is what included echarts code could look like",
+        
+        description: "this is what included echarts code could look like 2024",
         section: "Posts",
         handler: () => {
           
@@ -208,7 +220,8 @@ ninja.data = [{
         
           title: "a post with chart.js",
         
-        description: "this is what included chart.js code could look like",
+        
+        description: "this is what included chart.js code could look like 2024",
         section: "Posts",
         handler: () => {
           
@@ -219,7 +232,8 @@ ninja.data = [{
         
           title: "a post with TikZJax",
         
-        description: "this is what included TikZ code could look like",
+        
+        description: "this is what included TikZ code could look like 2023",
         section: "Posts",
         handler: () => {
           
@@ -230,7 +244,8 @@ ninja.data = [{
         
           title: "a post with bibliography",
         
-        description: "an example of a blog post with bibliography",
+        
+        description: "an example of a blog post with bibliography 2023",
         section: "Posts",
         handler: () => {
           
@@ -241,7 +256,8 @@ ninja.data = [{
         
           title: "a post with jupyter notebook",
         
-        description: "an example of a blog post with jupyter notebook",
+        
+        description: "an example of a blog post with jupyter notebook 2023",
         section: "Posts",
         handler: () => {
           
@@ -252,7 +268,8 @@ ninja.data = [{
         
           title: "a post with custom blockquotes",
         
-        description: "an example of a blog post with custom blockquotes",
+        
+        description: "an example of a blog post with custom blockquotes 2023",
         section: "Posts",
         handler: () => {
           
@@ -263,7 +280,8 @@ ninja.data = [{
         
           title: "a post with table of contents on a sidebar",
         
-        description: "an example of a blog post with table of contents on a sidebar",
+        
+        description: "an example of a blog post with table of contents on a sidebar 2023",
         section: "Posts",
         handler: () => {
           
@@ -274,7 +292,8 @@ ninja.data = [{
         
           title: "a post with audios",
         
-        description: "this is what included audios could look like",
+        
+        description: "this is what included audios could look like 2023",
         section: "Posts",
         handler: () => {
           
@@ -285,7 +304,8 @@ ninja.data = [{
         
           title: "a post with videos",
         
-        description: "this is what included videos could look like",
+        
+        description: "this is what included videos could look like 2023",
         section: "Posts",
         handler: () => {
           
@@ -296,7 +316,8 @@ ninja.data = [{
         
           title: "displaying beautiful tables with Bootstrap Tables",
         
-        description: "an example of how to use Bootstrap Tables",
+        
+        description: "an example of how to use Bootstrap Tables 2023",
         section: "Posts",
         handler: () => {
           
@@ -307,7 +328,8 @@ ninja.data = [{
         
           title: "a post with table of contents",
         
-        description: "an example of a blog post with table of contents",
+        
+        description: "an example of a blog post with table of contents 2023",
         section: "Posts",
         handler: () => {
           
@@ -318,7 +340,8 @@ ninja.data = [{
         
           title: "a post with giscus comments",
         
-        description: "an example of a blog post with giscus comments",
+        
+        description: "an example of a blog post with giscus comments 2022",
         section: "Posts",
         handler: () => {
           
@@ -329,7 +352,8 @@ ninja.data = [{
         
           title: 'Displaying External Posts on Your al-folio Blog <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
-        description: "",
+        
+        description: " 2022",
         section: "Posts",
         handler: () => {
           
@@ -340,7 +364,8 @@ ninja.data = [{
         
           title: "a post with redirect",
         
-        description: "you can also redirect to assets like pdf",
+        
+        description: "you can also redirect to assets like pdf 2022",
         section: "Posts",
         handler: () => {
           
@@ -351,7 +376,8 @@ ninja.data = [{
         
           title: "a post with diagrams",
         
-        description: "an example of a blog post with diagrams",
+        
+        description: "an example of a blog post with diagrams 2021",
         section: "Posts",
         handler: () => {
           
@@ -362,7 +388,8 @@ ninja.data = [{
         
           title: "a distill-style blog post",
         
-        description: "an example of a distill-style blog post and main elements",
+        
+        description: "an example of a distill-style blog post and main elements 2021",
         section: "Posts",
         handler: () => {
           
@@ -373,7 +400,8 @@ ninja.data = [{
         
           title: "a post with twitter",
         
-        description: "an example of a blog post with twitter",
+        
+        description: "an example of a blog post with twitter 2020",
         section: "Posts",
         handler: () => {
           
@@ -384,7 +412,8 @@ ninja.data = [{
         
           title: "a post with disqus comments",
         
-        description: "an example of a blog post with disqus comments",
+        
+        description: "an example of a blog post with disqus comments 2015",
         section: "Posts",
         handler: () => {
           
@@ -395,7 +424,8 @@ ninja.data = [{
         
           title: "a post with math",
         
-        description: "an example of a blog post with some math",
+        
+        description: "an example of a blog post with some math 2015",
         section: "Posts",
         handler: () => {
           
@@ -406,7 +436,8 @@ ninja.data = [{
         
           title: "a post with code",
         
-        description: "an example of a blog post with some code",
+        
+        description: "an example of a blog post with some code 2015",
         section: "Posts",
         handler: () => {
           
@@ -417,7 +448,8 @@ ninja.data = [{
         
           title: "a post with images",
         
-        description: "this is what included images could look like",
+        
+        description: "this is what included images could look like 2015",
         section: "Posts",
         handler: () => {
           
@@ -428,7 +460,8 @@ ninja.data = [{
         
           title: "a post with formatting and links",
         
-        description: "march &amp; april, looking forward to summer",
+        
+        description: "march &amp; april, looking forward to summer 2015",
         section: "Posts",
         handler: () => {
           
