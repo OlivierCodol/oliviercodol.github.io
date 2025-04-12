@@ -1,8 +1,8 @@
-window.op =
-  window.op ||
-  function (...args) {
+if (!window.op) {
+  window.op = function (...args) {
     (window.op.q = window.op.q || []).push(args);
   };
+}
 window.op("init", {
   clientId: "",
   trackScreenViews: true,
