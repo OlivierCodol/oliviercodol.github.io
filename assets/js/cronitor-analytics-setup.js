@@ -1,6 +1,6 @@
-if (!window.cronitor) {
-  window.cronitor = function () {
+window.cronitor =
+  window.cronitor ||
+  function () {
     (window.cronitor.q = window.cronitor.q || []).push(arguments);
   };
-}
 cronitor("config", { clientKey: "" });
