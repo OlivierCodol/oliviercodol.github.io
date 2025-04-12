@@ -1,5 +1,9 @@
 name: Check for broken links on site
 
+permissions:
+  contents: read
+  pull-requests: write
+
 on:
   workflow_run:
     workflows: [Deploy site]

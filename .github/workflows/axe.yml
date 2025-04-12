@@ -1,5 +1,9 @@
 name: Axe accessibility testing
 
+permissions:
+  contents: read
+  pull-requests: write
+
 on:
   # if you want to run this on every push uncomment the following lines
   push:
