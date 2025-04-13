@@ -308,6 +308,15 @@ ul.task-list input[type="checkbox"] {
 
   .navbar-brand {
     color: var(--navbar-text-color);
+
+    &:hover {
+      text-decoration: none; /* Prevent underline on hover */
+    }
+
+  }
+  
+  .navbar-brand span {
+    color: inherit;
   }
 
   .navbar-nav .nav-item .nav-link {
@@ -315,6 +324,9 @@ ul.task-list input[type="checkbox"] {
 
     &:hover {
       color: var(--global-hover-color);
+    }
+
+    &:no-button:hover{
       text-decoration: underline;
     }
   }
