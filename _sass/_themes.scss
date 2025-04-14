@@ -8,7 +8,7 @@
   color-scheme: light;
   --navbar-bg-color: #{$blue-color-dark};
   --navbar-text-color: #{$white-color};
-  --global-bg-color: #{$white-color};
+  --global-bg-color: #{$grey-240};
   --global-code-bg-color: #{$code-bg-color-light};
   --global-text-color: #{$black-color};
   --global-text-color-light: #{$grey-color};
@@ -19,7 +19,7 @@
   --global-footer-text-color: #{$grey-color-light};
   --global-footer-link-color: #{$white-color};
   --global-distill-app-color: #{$grey-color};
-  --global-divider-color: rgba(0, 0, 0, 0.1);
+  --global-divider-color: rgba(0, 0, 0, 0.15);
   --global-card-bg-color: #{$white-color};
   --global-highlight-color: #{$red-color-dark};
   --global-back-to-top-bg-color: rgba(
