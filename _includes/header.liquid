@@ -1,50 +1,85 @@
 <header>
+
   <!-- Nav Bar -->
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
+    
+  
+  <div data-animation="default" class="navbar1_component w-nav" data-easing2="ease" fs-scrolldisable-element="smart-nav" data-easing="ease" data-collapse="all" data-w-id="e4779570-13e7-61f8-914b-f8b596ae4623" role="banner" data-duration="400">      
+    
     <div class="container">
-      {% if page.permalink != '/' %}
-        <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
-          {% if site.title == 'blank' %}
-            {% if site.first_name %}
-              <span class="font-weight-bold">
-                {{- site.first_name -}}
-              </span>
-            {% endif %}
-            {% if site.middle_name %}
-              {{- site.middle_name -}}
-            {% endif %}
-            {% if site.last_name %}
-              {{- site.last_name -}}
-            {% endif %}
-          {% else %}
-            {{- site.title -}}
+    {% if page.permalink != '/' %}
+      <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
+        {% if site.title == 'blank' %}
+          {% if site.first_name %}
+            <span class="font-weight-bold">
+              {{- site.first_name -}}
+            </span>
           {% endif %}
-        </a>
-      {% elsif site.enable_navbar_social %}
-        <!-- Social Icons -->
-        <div class="navbar-brand social">{% include social.liquid %}</div>
-      {% endif %}
-      <!-- Navbar Toggle -->
-      <button
-        class="navbar-toggler collapsed ml-auto"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar top-bar"></span>
-        <span class="icon-bar middle-bar"></span>
-        <span class="icon-bar bottom-bar"></span>
-      </button>
+          {% if site.middle_name %}
+            {{- site.middle_name -}}
+          {% endif %}
+          {% if site.last_name %}
+            {{- site.last_name -}}
+          {% endif %}
+        {% else %}
+          {{- site.title -}}
+        {% endif %}
+      </a>
+    {% elsif site.enable_navbar_social %}
+      <!-- Social Icons -->
+      <div class="navbar-brand social">{% include social.liquid %}</div>
+    {% endif %}
 
-      <div class="collapse navbar-collapse text-right" id="navbarNav">
-        <ul class="navbar-nav ml-auto flex-nowrap">
+    {% if site.enable_darkmode %}
+      <!-- Toogle theme mode -->
+      <div class="toggle-container">
+        <button id="light-toggle" title="Change theme">
+          <i class="ti ti-sun-moon" id="light-toggle-system"></i>
+          <i class="ti ti-moon-filled" id="light-toggle-dark"></i>
+          <i class="ti ti-sun-filled" id="light-toggle-light"></i>
+        </button>
+      </div>
+    {% endif %}
+
+    {% if site.search_enabled %}
+      <!-- Search -->
+      <div class="nav-item">
+        <button id="search-toggle" title="Search" onclick="openSearchModal()">
+          <span class="nav-link">ctrl k <i class="ti ti-search"></i></span>
+        </button>
+      </div>
+    {% endif %}
+    
+  
+  <div class="navbar1_container">
+      <div class="navbar1_menu-button w-nav-button">
+        <div class="menu-icon1">
+          <div class="menu-icon1_line-top"></div>
+          <div class="menu-icon1_line-middle">
+            <div class="menu-icon_line-middle-inner"></div>
+          </div>
+          <div class="menu-icon1_line-bottom"></div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+
+    <nav role="navigation" class="navbar1_menu w-nav-menu">
+        <div class="container-large">
+          <div class="wrap_nav-columns">
+            
+          
           {% for page in site.pages %}
-            {% if page.permalink == '/' %} {% assign about_title = page.title %} {% endif %}
-          {% endfor %}
+          {% if page.permalink == '/' %} {% assign about_title = page.title %} {% endif %}
+        {% endfor %}
+
+        {% assign navcol_title = 'aboot' %}
+        <div class="nav-column">
+          <div>
+            <h4>{{- navcol_title }}</h4>
+          </div>
+          <ul class="navbar-nav flex-nowrap nav-column">
 
           <!-- About -->
           <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
@@ -98,6 +133,15 @@
                   </div>
                 </li>
               {% else %}
+                {% if p.navcol and p.navcol != navcol_title %}
+                  </ul></div>
+                  {% assign navcol_title = p.navcol %}
+                  <div class="nav-column">
+                    <div>
+                      <h4>{{- navcol_title }}</h4>
+                    </div>
+                    <ul class="navbar-nav flex-nowrap nav-column">
+                {% endif %}
                 {% assign parent_link = p.permalink | remove: 'index.html' %}
                 <li class="nav-item {% if page.url contains parent_link %}active{% endif %}">
                   {%- if p.permalink contains '://' -%}
@@ -117,28 +161,17 @@
               {% endif %}
             {% endif %}
           {% endfor %}
-          {% if site.search_enabled %}
-            <!-- Search -->
-            <li class="nav-item">
-              <button id="search-toggle" title="Search" onclick="openSearchModal()">
-                <span class="nav-link">ctrl k <i class="ti ti-search"></i></span>
-              </button>
-            </li>
-          {% endif %}
-          {% if site.enable_darkmode %}
-            <!-- Toogle theme mode -->
-            <li class="toggle-container">
-              <button id="light-toggle" title="Change theme">
-                <i class="ti ti-sun-moon" id="light-toggle-system"></i>
-                <i class="ti ti-moon-filled" id="light-toggle-dark"></i>
-                <i class="ti ti-sun-filled" id="light-toggle-light"></i>
-              </button>
-            </li>
-          {% endif %}
-        </ul>
-      </div>
-    </div>
+          </ul></div>
+          
+          </div>
+        </div>
+      </nav>
+
+
+  </div>
+  
   </nav>
+
   {% if site.enable_progressbar %}
     <!-- Scrolling Progress Bar -->
     <progress id="progress" value="0">
