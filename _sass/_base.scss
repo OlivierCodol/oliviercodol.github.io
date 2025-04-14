@@ -4,6 +4,22 @@
 
 // Typography
 
+
+@font-face {
+  font-family: 'Manrope Variablefont Wght';
+  src: url('https://cdn.prod.website-files.com/667a10df2ea8d55c5f903748/667a13fe587f6a3229bc0dd5_Manrope-VariableFont_wght.ttf') format('truetype');
+  font-weight: 200 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: Manrope Variablefont Wght, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
 p,
 h1,
 h2,
@@ -300,6 +316,10 @@ ul.task-list input[type="checkbox"] {
   left: 0;
   right: 0;
   overflow: hidden;
+
+  .nav-link {
+    letter-spacing: 1px;
+  }
 }
 
 .w-nav-overlay [data-nav-menu-open] {
@@ -523,6 +543,7 @@ ul.task-list input[type="checkbox"] {
   opacity: 0.95;
   padding-left: 0;
   padding-right: 0;
+  font-weight: 400;  /* overwrite another CSS file */
 }
 
 .navbar .dropdown-menu {
@@ -584,7 +605,16 @@ ul.task-list input[type="checkbox"] {
   align-items: flex-start;
   width: 25%;
   padding-right: 2rem;
-  display: inline-flex
+  display: inline-flex;  
+}
+
+.nav-column h4 {
+  color: var(--navbar-text-color);
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  font-size: .875rem;
+  font-weight: 700;
+  line-height: 1.4
 }
 
 .navbar-expand-sm .navbar-nav {
@@ -621,6 +651,7 @@ ul.task-list input[type="checkbox"] {
       color: var(--global-hover-color);
     }
 
+    
     &:no-button:hover{
       text-decoration: underline;
     }
