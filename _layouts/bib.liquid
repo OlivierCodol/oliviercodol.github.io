@@ -5,12 +5,20 @@
     <div class="col col-sm-2 abbr">
       {%- if entry.abbr -%}
         {%- if site.data.venues[entry.abbr] -%}
-          {% assign venue_style = null %}
+          {% assign styles = '' %}
           {% if site.data.venues[entry.abbr].color != blank %}
-            {% assign venue_style = site.data.venues[entry.abbr].color | prepend: 'style="background-color:' | append: '"' %}
-          {%- endif -%}
+            {% assign styles = styles | append: 'background-color:' | append: site.data.venues[entry.abbr].color | append: ';' %}
+          {% endif %}
+          {% if site.data.venues[entry.abbr].text != blank %}
+            {% assign styles = styles | append: 'color:' | append: site.data.venues[entry.abbr].text | append: ' !important;' %}
+          {% endif %}
+          {% if styles != '' %}
+            {% assign venue_style = 'style="' | append: styles | append: '"' %}
+          {% else %}
+            {% assign venue_style = null %}
+          {% endif %}
           <abbr
-            class="badge rounded w-100"
+            class="badge w-100"
             {% if venue_style %}
               {{ venue_style }}
             {% endif -%}
@@ -22,7 +30,7 @@
             {% endif %}
           </abbr>
         {% else %}
-          <abbr class="badge rounded w-100">{{ entry.abbr }}</abbr>
+          <abbr class="badge w-100">{{ entry.abbr }}</abbr>
         {% endif %}
       {% endif %}
       {% if entry.preview %}
@@ -201,6 +209,12 @@
       {% if entry.arxiv %}
         <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
       {% endif %}
+      {% if entry.publisher_site %}
+        <a href="{{ entry.publisher_site }}" class="btn btn-sm z-depth-0" role="button">Publisher</a>
+      {% endif %}
+      {% if entry.biorxiv %}
+        <a href="https://www.biorxiv.org/content/{{ entry.biorxiv }}" class="btn btn-sm z-depth-0" role="button">bioRxiv</a>
+      {% endif %}
       {% if entry.bibtex_show %}
         <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
       {% endif %}
@@ -223,6 +237,16 @@
           <a href="{{ entry.supp }}" class="btn btn-sm z-depth-0" role="button">Supp</a>
         {% else %}
           <a href="{{ entry.supp | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Supp</a>
+        {% endif %}
+      {% endif %}
+      {% if entry.data %}
+        <a href="{{ entry.data }}" class="btn btn-sm z-depth-0" role="button">Data</a>
+      {% endif %}
+      {% if entry.svg %}
+        {% if entry.svg contains '://' %}
+          <a href="{{ entry.svg }}" class="btn btn-sm z-depth-0" role="button">SVG</a>
+        {% else %}
+          <a href="{{ entry.svg | prepend: '/assets/svg/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">SVG</a>
         {% endif %}
       {% endif %}
       {% if entry.video and site.enable_video_embedding %}
