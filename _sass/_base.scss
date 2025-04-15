@@ -1559,6 +1559,7 @@ ninja-keys {
   --ninja-icon-size: 0px;
   --ninja-modal-background: var(--global-bg-color);
   --ninja-z-index: 1031;
+  --ninja-key-border-radius: 0;
 }
 
 ninja-keys::part(ninja-input) {
