@@ -184,6 +184,12 @@ ul.task-list input[type="checkbox"] {
 
 .card {
   background-color: var(--global-card-bg-color);
+  border-radius: 0;
+
+  .card-img-top {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
 
   .card-img {
     width: 100%;
@@ -895,6 +901,7 @@ footer.sticky-bottom {
       .badge {
         color: var(--global-card-bg-color) !important;
         background-color: var(--global-theme-color) !important;
+        border-radius: 0;
       }
     }
   }
@@ -1104,7 +1111,8 @@ footer.sticky-bottom {
     li {
       margin-bottom: 1rem;
 
-      .preview {
+      .badge {
+        border-radius: 0;
       }
 
       .abbr {
@@ -1254,7 +1262,7 @@ figure.highlight {
 pre {
   color: var(--global-theme-color);
   background-color: var(--global-code-bg-color);
-  border-radius: 6px;
+  border-radius: 0px;
   padding: 6px 12px;
 
   pre,
@@ -1585,7 +1593,7 @@ ninja-keys::part(ninja-input-wrapper) {
   min-width: 100px;
   box-sizing: border-box;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px;
-  border-radius: 6px;
+  border-radius: 0px;
   padding: 8px 12px;
 }
 
