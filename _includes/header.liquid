@@ -76,7 +76,7 @@
             {% for page in site.pages %}
               {% if page.permalink == '/' %} {% assign about_title = page.title %} {% endif %}
             {% endfor %}
-            {% assign navcol_title = 'aboot' %}
+            {% assign navcol_title = 'about' %}
 
             <div class="nav-column">
               <div><h4>{{- navcol_title }}</h4></div>
@@ -134,9 +134,9 @@
                       </div>
                     </li>
                   {% else %}
-                    {% if p.navcol and p.navcol != navcol_title %}
+                    {% if p.nav_column and p.nav_column != navcol_title %}
                       </ul></div>
-                      {% assign navcol_title = p.navcol %}
+                      {% assign navcol_title = p.nav_column %}
                       <div class="nav-column">
                         <div><h4>{{- navcol_title }}</h4></div>
                         <ul class="navbar-nav flex-nowrap nav-column">
