@@ -1,7 +1,7 @@
 name: Publish posts scheduled for today
 
 permissions:
-  contents: read
+  contents: write
   pull-requests: write
 
 on:
