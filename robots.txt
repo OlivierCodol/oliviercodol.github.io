@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://OlivierCodol.github.io//sitemap.xml
+Sitemap: https://OlivierCodol.github.io/sitemap.xml
