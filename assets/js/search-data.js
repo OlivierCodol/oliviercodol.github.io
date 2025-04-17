@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-research",
           title: "Research",
-          description: "A growing collection of your cool projects.",
+          description: "Here is a brief outline of the research questions I have explored over the years.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/research/";
@@ -515,6 +515,21 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
+            },},{id: "research-neural-control-of-stiffness",
+          title: 'Neural Control of Stiffness',
+          description: "",
+          section: "Research",handler: () => {
+              window.location.href = "/research/1_project/";
+            },},{id: "research-integration-of-reinforcement-signals-during-movement",
+          title: 'Integration of reinforcement signals during movement',
+          description: "",
+          section: "Research",handler: () => {
+              window.location.href = "/research/2_project/";
+            },},{id: "research-learning-to-move-through-reinforcement-signals",
+          title: 'Learning to move through reinforcement signals',
+          description: "",
+          section: "Research",handler: () => {
+              window.location.href = "/research/3_project/";
             },},{
         id: 'social-bluesky',
         title: 'Bluesky',
