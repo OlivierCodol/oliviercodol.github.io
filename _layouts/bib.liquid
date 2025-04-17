@@ -240,7 +240,11 @@
         {% endif %}
       {% endif %}
       {% if entry.data %}
-        <a href="{{ entry.data }}" class="btn btn-sm z-depth-0" role="button">Data</a>
+        {% if entry.data contains ' ' %}
+          <a class="abstract btn btn-sm z-depth-0" role="button">Data</a>
+        {% else %}
+          <a href="{{ entry.data }}" class="btn btn-sm z-depth-0" role="button">Data</a>
+        {% endif %}
       {% endif %}
       {% if entry.svg %}
         {% if entry.svg contains '://' %}
@@ -390,6 +394,18 @@
       <!-- Hidden video block -->
       <div class="abstract hidden">
         <div style="text-align: center;">{% include video.liquid path=entry.video class="img-fluid rounded z-depth-1" controls=true %}</div>
+      </div>
+    {% endif %}
+
+    {% if entry.data and entry.data contains ' ' %}
+      <!-- Hidden data block -->
+      <div class="abstract hidden">
+        <div class="links">
+          {% assign urls = entry.data | split: " " %}
+          {% for this_url in urls %}
+            <a href="{{ this_url }}" class="btn btn-sm z-depth-0" role="button">Dataset {{ forloop.index }}</a>
+          {% endfor %}
+        </div>
       </div>
     {% endif %}
   </div>

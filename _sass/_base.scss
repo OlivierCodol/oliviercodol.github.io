@@ -1271,6 +1271,10 @@ footer.sticky-bottom {
 
       div.abstract.hidden {
         border: dashed 1px var(--global-bg-color);
+
+        .links {
+          margin-left: 0.5rem;
+        }
       }
 
       div.abstract.hidden.open {
