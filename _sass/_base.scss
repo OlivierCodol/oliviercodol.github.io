@@ -770,6 +770,9 @@ ul.task-list input[type="checkbox"] {
   padding-bottom: 0;
   padding-left: 1%;
   padding-right: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -788,6 +791,12 @@ ul.task-list input[type="checkbox"] {
     color: inherit;
     padding: 0 1rem;
   }
+}
+
+#light-toggle i {
+  font-size: 22px;
+  width: 22px;
+  height: 22px;
 }
 
 // Social (bottom)
