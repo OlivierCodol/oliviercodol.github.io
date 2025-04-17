@@ -1,0 +1,30 @@
+{% assign project_id = project.path | split: '/' | last | split: '.' | first %}
+
+<div class="accordion-item">
+  <div class="accordion-header">
+    <div 
+      class="accordion-button{% if project.collapsed %} collapsed{% endif %}"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#{{ project_id }}"
+      aria-expanded="{% if project.collapsed %}false{% else %}true{% endif %}"
+    >
+      <h3>{{ project.title }}</h3>
+      <span class="chevron-box">
+        <span class="chevron-icon"></span>
+      </span>
+    </div>
+  </div>
+  <div id="{{ project_id }}" class="accordion-collapse {% if project.collapsed %}collapse{% else %}show{% endif %}">
+    <div class="accordion-body">
+      {{ project.content }}
+
+      {% if project.related_publications %}
+        <h5>References</h5>
+        <div class="publications">
+          {% bibliography --cited_in_order %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
