@@ -44,15 +44,6 @@
           </div>
         {% endif %}
 
-        <!-- Search -->
-        {% if site.search_enabled %}
-          <div class="nav-item">
-            <button id="search-toggle" title="Search" onclick="openSearchModal()">
-              <span class="nav-link">ctrl k <i class="ti ti-search"></i></span>
-            </button>
-          </div>
-        {% endif %}
-      
         <!-- Menu button -->
         <div class="navbar1_container">
           <div class="navbar1_menu-button w-nav-button">
@@ -161,6 +152,17 @@
                 {% endif %}
               {% endfor %}
               </ul>
+            </div>
+              
+            <div class="nav-column">
+            <!-- Search -->
+            {% if site.search_enabled %}
+              <div class="nav-item">
+                <button id="search-toggle" title="Search" onclick="openSearchModal()">
+                  <span class="nav-link">ctrl k <i class="ti ti-search"></i></span>
+                </button>
+              </div>
+            {% endif %}
             </div>
 
           </div>

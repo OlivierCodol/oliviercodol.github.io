@@ -449,6 +449,9 @@ ul.task-list input[type="checkbox"] {
 .wrap_nav-columns {
   margin: 2% auto;
   max-width: $max-content-width;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .navbar1_menu {
@@ -613,8 +616,9 @@ ul.task-list input[type="checkbox"] {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 25%;
-  padding-right: 2rem;
+  width: auto;
+  padding-right: 4%;
+  padding-left: 4%;
   display: inline-flex;  
 }
 
@@ -782,6 +786,7 @@ ul.task-list input[type="checkbox"] {
 
   span {
     color: inherit;
+    padding: 0 1rem;
   }
 }
 
