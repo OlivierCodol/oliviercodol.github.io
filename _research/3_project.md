@@ -1,0 +1,44 @@
+---
+collapsed: false
+title: Learning to move through reinforcement signals
+category: work
+related_publications: false
+---
+
+<p>
+  While rewarding feedback can improve motor control, it can also improve acquisition of new motor
+  memories, a process often referred to as motor learning. But like for motor control, motor learning
+  relies on different contributing mechanisms to produce the behavioural improvements we observe and
+  quantify. While initially it was hypothesised that reinforcement could improve motor adaptation,
+  a subset of motor learning that recalibrates sensorimotor mapping, colleagues and I show in a series
+  of studies that reinforcement
+  acts instead at another level, often called "explicit control".
+  That is, reinforcement biases participants' voluntary strategy toward more rewarded actions,
+  which is reminiscent of decision-making.
+  We also show that participants' capacity to capitalize on such reinforcement feedback to improve their
+  performance is tied to their working memory capacity rather than their dopaminergic genetic profile
+  directly.
+</p>
+<p>
+  A reccurent hope about motor learning through reinforcement has been to enhance sports coaching
+  and motor rehabilitation procedures for clinical populations. The real potential for these applications
+  is directly tied to how exactly reinforcement acts on the motor learning system, as different answers
+  beset different prospects regarding their viability and means of achievement. You can find some
+  points on this topic in
+  <a href="publications.html#thesis">
+    chapter six
+  </a>
+  of my Ph.D. thesis.
+</p>
+<p>
+  <span class="text-decoration-underline">References</span><br>
+  <a href="publications.html#2018-sci-rep">
+    The relationship between reinforcement and explicit control during visuomotor adaptation
+  </a><br>
+  <a href="publications.html#2018-jnp">
+    The contribution of explicit processes to reinforcement-based motor learning
+  </a><br>
+  <a href="publications.html#2019-j-neurosci">
+    Domain-specific working memory, but not dopamine-related genetic variability, shapes reward-based motor learning
+  </a>
+</p>

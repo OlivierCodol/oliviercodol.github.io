@@ -49,7 +49,7 @@ rss_icon: true
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
+footer_fixed: false
 search_enabled: true
 socials_in_search: true
 posts_in_search: true
@@ -98,7 +98,7 @@ pagination:
   enabled: true
 
 related_blog_posts:
-  enabled: true
+  enabled: false
   max_related: 5
 
 # Giscus comments (RECOMMENDED)
@@ -152,6 +152,8 @@ collections:
       layout: post
     output: true
   projects:
+    output: true
+  research:
     output: true
 
 # -----------------------------------------------------------------------------
@@ -322,6 +324,9 @@ filtered_bibtex_keywords:
     supp,
     video,
     website,
+    svg,
+    publisher_site,
+    biorxiv,
   ]
 
 # Maximum number of authors to be shown for each publication (more authors are visible on click)
