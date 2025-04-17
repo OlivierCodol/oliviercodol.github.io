@@ -1946,6 +1946,13 @@ Custom styles for the inline arrow buttons
   justify-content: flex-start;
   align-items: center;
   padding: 0 1rem 0 0;
+  letter-spacing: 1px;
+  color: var(--global-text-color);
+  text-decoration: none;
+
+  &:hover .button-text {
+    text-decoration: underline;
+  }
 }
 
 .button.is-icon-only {
@@ -1958,11 +1965,12 @@ Custom styles for the inline arrow buttons
 }
 
 .button.is-icon-only-border {
-  border: 1px solid var(--brand--button);
+  border: 1px solid var(--global-text-color);
   padding: 0.75rem;
   justify-content: center;
   align-items: center;
   display: inline-flex;
+  margin-left: 1.2%;
 }
 
 .button:hover .icon-button {
@@ -1970,6 +1978,8 @@ Custom styles for the inline arrow buttons
 }
 
 .icon-button {
+  width: 0.9rem; /* a bit bigger to fit everything nicely */
+  height: 0.9rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1980,6 +1990,7 @@ Custom styles for the inline arrow buttons
 
 .button:hover .icon-button {
   transform: scale(1.2); /* Adjust the scale as needed */
+  text-decoration: none;
 }
 
 .icon-button-inline {
