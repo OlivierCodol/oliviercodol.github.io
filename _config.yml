@@ -155,6 +155,8 @@ collections:
     output: true
   research:
     output: true
+  materials:
+    output: true
 
 # -----------------------------------------------------------------------------
 # Jekyll settings

@@ -1,4 +1,5 @@
 {% assign project_id = project.path | split: '/' | last | split: '.' | first %}
+{% assign project_title = wrapped_project_title | default: project.title %}
 
 <div class="accordion-item">
   <div class="accordion-header">
@@ -9,7 +10,7 @@
       data-bs-target="#{{ project_id }}"
       aria-expanded="{% if project.collapsed %}false{% else %}true{% endif %}"
     >
-      <h3>{{ project.title }}</h3>
+      {{ project_title }}
       <span class="chevron-box">
         <span class="chevron-icon"></span>
       </span>

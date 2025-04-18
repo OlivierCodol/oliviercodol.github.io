@@ -227,7 +227,7 @@ ul.task-list input[type="checkbox"] {
     margin-top: 5px;
     font-family: monospace;
     text-align: center;
-    
+
     p {
       display: inline-block;
       margin: 0;
@@ -1091,6 +1091,24 @@ footer.sticky-bottom {
   .grid-item {
     width: 250px;
     margin-bottom: 10px;
+  }
+
+  h2.category {
+    color: var(--global-divider-color);
+    border-bottom: 1px solid var(--global-divider-color);
+    padding-top: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: right;
+  }
+}
+
+// Projects
+
+.collection {
+
+  .col {
+    padding-bottom: 1rem;
   }
 
   h2.category {
@@ -2046,3 +2064,93 @@ Custom styles for the inline arrow buttons
   width: 13px;
 }
 
+
+/* 
+Materials icons
+*/
+
+.video-icon {
+  background-color: var(--global-text-color);
+  --svg: url("data:image/svg+xml,%3Csvg viewBox='0 0 12 12' xmlns='http://www.w3.org/2000/svg'%0A%3E%3Cpath d='M1 2 L11 2 L11 10 L1 10 Z' fill='none' stroke='%23000000' stroke-width='0.6'/%3E%3Cpath d='M5 4 L8 6 L5 8 Z' fill='none' stroke='%23000000' stroke-width='0.6'/%3E%3C/svg%3E%0A");
+  
+  /* Chrome (needs prefix) */
+  -webkit-mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: 90%;
+
+  /* Firefox, Safari */
+  mask-image: var(--svg);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: 90%;
+
+  width: 1.5em;
+  height: 1.5em;
+  display: inline-block;
+  vertical-align: text-bottom;
+  margin-right: 0.3em;
+}
+
+.book-icon {
+  background-color: var(--global-text-color);
+  --svg: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20strokelinecap%3D%22round%22%20strokelinejoin%3D%22round%22%20width%3D%2224%22%20height%3D%2224%22%20strokeWidth%3D%222%22%3E%20%3Cpath%20d%3D%22M3%2019a9%209%200%200%201%209%200a9%209%200%200%201%209%200%22%3E%3C/path%3E%20%3Cpath%20d%3D%22M3%206a9%209%200%200%201%209%200a9%209%200%200%201%209%200%22%3E%3C/path%3E%20%3Cpath%20d%3D%22M3%206l0%2013%22%3E%3C/path%3E%20%3Cpath%20d%3D%22M12%206l0%2013%22%3E%3C/path%3E%20%3Cpath%20d%3D%22M21%206l0%2013%22%3E%3C/path%3E%20%3C/svg%3E");
+  
+  /* Chrome (needs prefix) */
+  -webkit-mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+
+  /* Firefox, Safari */
+  mask-image: var(--svg);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+
+  width: 1.5em;
+  height: 1.5em;
+  display: inline-block;
+  vertical-align: text-bottom;
+  margin-right: 0.3em;
+}
+
+.course-icon {
+  background-color: var(--global-text-color);
+  --svg: url("data:image/svg+xml,%3Csvg viewBox='0 0 12 12' xmlns='http://www.w3.org/2000/svg'%0A%3E%3Cpath d='M4.5 10 H1 V2 H11 V10 H10' fill='none' stroke='%23000000' stroke-width='0.6'/%3E%3Cpath d='M5.5 10 V8 H9 V10 Z' fill='none' stroke='%23000000' stroke-width='0.6'/%3E%3C/svg%3E%0A");
+
+  
+  /* Chrome (needs prefix) */
+  -webkit-mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: 90%;
+
+  /* Firefox, Safari */
+  mask-image: var(--svg);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: 90%;
+
+  width: 1.5em;
+  height: 1.5em;
+  display: inline-block;
+  vertical-align: text-bottom;
+  margin-right: 0.3em;
+}
+
+
+/*
+to make videos responsive
+*/
+.videoWrapper {
+  position: relative;
+  padding-bottom: 315px; /* 16:9 */
+  height: 0;
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+}

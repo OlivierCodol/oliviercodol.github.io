@@ -12,6 +12,7 @@ nav_column: science
 {% assign sorted_projects = site.research | sort: "importance" %}
 
 {% for project in sorted_projects %}
+{% assign wrapped_project_title = "<h3>" | append: project.title | append: "</h3>" %}
 <div class="accordion accordion-flush mb-3">
   {% include accordion.liquid %}
 </div>
