@@ -34,7 +34,7 @@ related_publications: false
   <!-- cite but do not show -->
   <span hidden>
     {% cite holland2019domain %}
-    {% cite codol2018relashionship %}
+    {% cite codol2018relationship %}
     {% cite holland2018contribution %}
     {% cite codol2019thesis %}
   </span>
