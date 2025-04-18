@@ -4,17 +4,17 @@ title: Materials
 permalink: /materials/
 description: This page indexes materials I found useful for familiarizing myself with new or otherwise challenging concepts. I hope they are useful to others as well.
 nav: true
-nav_order: 8
+nav_order: 5
+nav_column: resources
 display_categories: [Computational Neuroscience of Movement, Optimal Control Theory, Mathematics, Machine Learning]
-horizontal: false
 ---
 
 <div class="collection">
 <!-- Display categorized projects -->
 {% for category in page.display_categories %}
-<a id="{{ category }}" href=".#{{ category }}">
-  <h2 class="category">{{ category }}</h2>
-</a>
+<h2 class="category">
+  <a id="{{ category }}" href=".#{{ category }}">{{ category }}</a>
+</h2>
 {% assign categorized_projects = site.materials | where: "category", category %}
 {% assign sorted_projects = categorized_projects | sort: "importance" %}
 <!-- Generate accordion for each project -->

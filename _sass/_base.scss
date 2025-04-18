@@ -1100,6 +1100,18 @@ footer.sticky-bottom {
     margin-top: 2rem;
     margin-bottom: 1rem;
     text-align: right;
+    text-decoration: none !important;
+  }
+
+  h2.category a {
+    scroll-margin-top: 90px;
+    color: var(--global-divider-color);
+    text-decoration: none;
+  }
+
+  h2.category:hover {
+    color: var(--global-divider-color);
+    text-decoration: none;
   }
 }
 
@@ -1118,6 +1130,18 @@ footer.sticky-bottom {
     margin-top: 2rem;
     margin-bottom: 1rem;
     text-align: right;
+    text-decoration: none !important;
+  }
+
+  h2.category a {
+    scroll-margin-top: 90px;
+    color: var(--global-divider-color);
+    text-decoration: none;
+  }
+
+  h2.category:hover {
+    color: var(--global-divider-color);
+    text-decoration: none;
   }
 }
 
@@ -2153,4 +2177,93 @@ to make videos responsive
   position: absolute;
   top: 0;
   left: 0;
+}
+
+
+/*
+Handle smaller screen sizes for the overlay menu
+*/
+
+@media screen and (max-width:991px) {
+  
+  .navbar1_menu {
+    border-bottom: 1px solid var(--brand--white);
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: absolute;
+    overflow: auto
+  }
+
+  .navbar1_menu-dropdown {
+    width: 100%;
+    font-size: 1.125rem
+  }
+
+  .navbar1_dropdown-toggle {
+    align-items: center;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    padding-left: 0;
+    display: flex
+  }
+
+  .navbar1_dropdown-list {
+    position: static;
+    overflow: hidden
+  }
+
+  .navbar1_dropdown-list.w--open {
+    border-style: none;
+    padding: 0
+  }
+
+  .navbar1_dropdown-link {
+    width: auto;
+    padding: .75rem 0 .75rem 5%
+  }
+
+  .w-nav[data-collapse=medium] .w-nav-menu {
+    display: none
+  }
+
+  .w-nav[data-collapse=medium] .w-nav-button {
+    display: block
+  }
+}
+
+@media screen and (max-width:767px) {
+
+  .videoWrapper iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  
+  .navbar1_component {
+    height: auto;
+    min-height: 4rem
+  }
+
+  .navbar1_menu {
+    height: 100vh;
+    padding-bottom: 8rem;
+  }
+
+  .nav-column {
+    width: auto
+  }
+
+  .wrap_nav-columns {
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+    flex-flow: column;
+    display: flex
+  }
+
+  .w-nav-brand {
+    padding-left: 10px
+  }
 }

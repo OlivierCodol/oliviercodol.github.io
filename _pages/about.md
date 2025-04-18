@@ -43,3 +43,22 @@ Before  this, I completed my PhD in Birmingham, UK, where I was supervised by Jo
     {% include arrow_link.liquid url='https://josephgalea.weebly.com/' text='Galea Lab' border=false %}
   </div>
 </div>
+
+
+<h2 class="mb-3">Goals</h2>
+
+<ul class="mb-3" style="list-style-type: square;">
+  <li class="mb=1">
+    Make my research more easily navigable by bringing together the resources scattered across (too many) platforms.
+    </li>
+  <li class="mb-1">
+    Go beyond single-article narratives to link together observations and findings across studies.
+    </li>
+  <li class="mb-1">
+    Make available resources that may be useful to others.
+    </li>
+  <li class="mb-1">
+    Share pedagogic materials that turned out instrumental for self-learning.
+    </li>
+  <li class="mb-1">Learn to code in HTML and CSS. Also dabble with the basics of creative website design.</li>
+</ul>
