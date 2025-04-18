@@ -2248,7 +2248,7 @@ Handle smaller screen sizes for the overlay menu
   }
 
   .navbar1_menu {
-    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     padding-bottom: 8rem;
   }
 
