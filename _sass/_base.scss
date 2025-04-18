@@ -19,6 +19,7 @@ body {
   line-height: 1.5;
   font-weight: 400;
   word-spacing: 0.07em;
+  min-height: 750px;  /* Minimum height for the body to ensure proper unrolling of the navbar overlay menu */
 }
 
 p,
@@ -459,7 +460,8 @@ ul.task-list input[type="checkbox"] {
   z-index: 2;
   background-color: var(--navbar-bg-color);
   color: var(--navbar-text-color);
-  inset: 0% 0% auto
+  inset: 0% 0% auto;
+  overscroll-behavior: contain;
 }
 
 .navbar1_menu-dropdown {
@@ -2192,7 +2194,8 @@ Handle smaller screen sizes for the overlay menu
     justify-content: space-between;
     align-items: flex-start;
     position: absolute;
-    overflow: auto
+    overflow: auto;
+    overscroll-behavior: contain;
   }
 
   .navbar1_menu-dropdown {
@@ -2248,8 +2251,9 @@ Handle smaller screen sizes for the overlay menu
   }
 
   .navbar1_menu {
-    height: calc(var(--vh, 1vh) * 100);
+    height: 100vh;
     padding-bottom: 8rem;
+    overflow-y: auto;
   }
 
   .nav-column {
