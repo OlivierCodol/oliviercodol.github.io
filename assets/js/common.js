@@ -15,6 +15,9 @@ $(document).ready(function () {
     $(this).parent().parent().find(".award.hidden.open").toggleClass("open");
     $(this).parent().parent().find(".bibtex.hidden").toggleClass("open");
   });
+  $("a.reference").click(function () {
+    $(this).parent().parent().find(".reference.hidden").toggleClass("open");
+  });
   $("a").removeClass("waves-effect waves-light");
 
   // bootstrap-toc

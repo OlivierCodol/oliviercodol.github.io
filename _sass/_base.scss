@@ -2267,3 +2267,69 @@ Handle smaller screen sizes for the overlay menu
     padding-left: 10px
   }
 }
+
+
+
+.accordion {
+
+  a.btn {
+    color: var(--global-text-color) !important;
+    border: 1px solid var(--global-text-color);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    margin-left: 0;
+
+    &:hover {
+      color: var(--global-theme-color) !important;
+      border-color: var(--global-theme-color);
+    }
+  }
+
+  .hidden {
+    padding: 0 2%;
+    font-size: 0.875rem;
+    max-height: 0px;
+    overflow: hidden;
+    text-align: justify;
+    transition-property: 0.15s ease;
+    -moz-transition: 0.15s ease;
+    -ms-transition: 0.15s ease;
+    -o-transition: 0.15s ease;
+    transition: all 0.15s ease;
+
+    p {
+      line-height: 1.4em;
+      margin: 10px;
+    }
+
+    pre {
+      font-size: 1em;
+      line-height: 1.4em;
+      padding: 10px;
+    }
+  }
+
+  .hidden.open {
+    max-height: 50em;
+    overflow-y: auto; /* makes it scroll vertically */
+    transition: max-height 0.15s ease;
+    transition-property: 0.15s ease;
+    -moz-transition: 0.15s ease;
+    -ms-transition: 0.15s ease;
+    -o-transition: 0.15s ease;
+  }
+
+  div.reference.hidden {
+    border: dashed 1px var(--global-bg-color);
+
+    .links {
+      margin-left: 0.5rem;
+    }
+  }
+
+  div.reference.hidden.open {
+    border-color: var(--global-text-color);
+  }
+}

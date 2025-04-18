@@ -13,15 +13,19 @@ related_publications: false
   particularly clear. In a series of studies, I systematically dissect the motor system
   to outline which functional components show modulation by rewarding feedback and which do not.
 </p>
-<p>
-  <span class="text-decoration-underline">References</span><br>
-  <a href="publications.html#2020-j-neurosci">
-    Reward-based improvements in motor control are driven by multiple error-reducing mechanisms
-  </a><br>
-  <a href="publications.html#2020-ebr">
-    Reward-driven enhancements in motor control are robust to TMS manipulation
-  </a><br>
-  <a href="publications.html#2021-biorxiv">
-    Sensorimotor feedback loops are selectively sensitive to reward
-  </a>
-</p>
+
+<a class="reference btn btn-sm z-depth-0" role="button">References</a>
+
+<!-- Hidden reference block -->
+<div class="reference hidden">
+  <!-- cite but do not show -->
+  <span hidden>
+    {% cite codol2020reward %}
+    {% cite codol2020reward2 %}
+    {% cite codol2023sensorimotor %}
+  </span>
+  <div class="publications">
+    {% bibliography --cited %}
+  </div>
+</div>
+

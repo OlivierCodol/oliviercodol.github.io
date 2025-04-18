@@ -24,21 +24,21 @@ related_publications: false
   and motor rehabilitation procedures for clinical populations. The real potential for these applications
   is directly tied to how exactly reinforcement acts on the motor learning system, as different answers
   beset different prospects regarding their viability and means of achievement. You can find some
-  points on this topic in
-  <a href="publications.html#thesis">
-    chapter six
-  </a>
-  of my Ph.D. thesis.
+  points on this topic in chapter six of my Ph.D. thesis.
 </p>
-<p>
-  <span class="text-decoration-underline">References</span><br>
-  <a href="publications.html#2018-sci-rep">
-    The relationship between reinforcement and explicit control during visuomotor adaptation
-  </a><br>
-  <a href="publications.html#2018-jnp">
-    The contribution of explicit processes to reinforcement-based motor learning
-  </a><br>
-  <a href="publications.html#2019-j-neurosci">
-    Domain-specific working memory, but not dopamine-related genetic variability, shapes reward-based motor learning
-  </a>
-</p>
+
+<a class="reference btn btn-sm z-depth-0" role="button">References</a>
+
+<!-- Hidden reference block -->
+<div class="reference hidden">
+  <!-- cite but do not show -->
+  <span hidden>
+    {% cite holland2019domain %}
+    {% cite codol2018relashionship %}
+    {% cite holland2018contribution %}
+    {% cite codol2019thesis %}
+  </span>
+  <div class="publications">
+    {% bibliography --cited %}
+  </div>
+</div>
