@@ -1,4 +1,5 @@
 ---
+layout: page
 collapsed: true
 title: Lagrange Multipliers
 category: Optimal Control Theory

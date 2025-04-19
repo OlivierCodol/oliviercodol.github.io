@@ -1,8 +1,10 @@
 ---
+layout: page
 collapsed: false
 title: Integration of reinforcement signals during movement
 category: work
 related_publications: false
+redirect: /research#2_project
 ---
 
 <p>

@@ -1,8 +1,10 @@
 ---
+layout: page
 collapsed: false
 title: Learning to move through reinforcement signals
 category: work
 related_publications: false
+redirect: /research#3_project
 ---
 
 <p>

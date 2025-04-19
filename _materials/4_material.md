@@ -1,4 +1,5 @@
 ---
+layout: page
 collapsed: true
 title: Neuromechanics of Human Motion
 category: Computational Neuroscience of Movement

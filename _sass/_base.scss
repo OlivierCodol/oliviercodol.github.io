@@ -1908,6 +1908,10 @@ figure.cover {
   --bs-accordion-active-color: var(--global-text-color);
   --bs-accordion-active-bg: rgba(255, 255, 255, 0);
 
+  .accordion-collapse {
+    scroll-margin-top: 10rem;
+  }
+
   .accordion-item {
     background-color: var(--global-bg-color);
     border-color: var(--global-bg-color);
@@ -2323,7 +2327,9 @@ a.reference.btn {
   border: dashed 1px var(--global-bg-color);
 
   .links {
-    margin-left: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.1rem;
   }
 }
 

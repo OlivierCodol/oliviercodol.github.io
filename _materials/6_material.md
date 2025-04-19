@@ -1,4 +1,5 @@
 ---
+layout: page
 collapsed: true
 title: Support Vector Machines
 category: Machine Learning

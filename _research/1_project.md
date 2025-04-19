@@ -1,8 +1,10 @@
 ---
+layout: page
 collapsed: false
 title: Neural Control of Stiffness
 category: work
 related_publications: false
+redirect: /research#1_project
 ---
 
 <div class="d-flex row justify-content-between">

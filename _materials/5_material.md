@@ -1,4 +1,5 @@
 ---
+layout: page
 collapsed: true
 title: Imaginary Numbers
 category: Mathematics

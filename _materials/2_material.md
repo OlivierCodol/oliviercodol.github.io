@@ -1,4 +1,5 @@
 ---
+layout: page
 collapsed: true
 title: Optimal Control and Estimation
 category: Optimal Control Theory
